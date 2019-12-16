@@ -15,3 +15,8 @@ RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
    stable" && \
    apt-get update && \
    apt-get install docker-ce-cli
+
+RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl && \
+    mv kubectl /bin/ && \
+    chmod +x /bin/kubectl
+
