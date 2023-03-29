@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: elgohr/Publish-Docker-Github-Action@master
+    - uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: dwarburton/awscli
         username: dwarburton
